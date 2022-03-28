@@ -1,0 +1,830 @@
+/*---------------------------------------------------------------------------------
+
+Theme Name: Hamilton by Djibril
+Template: hamilton
+Author: Michael M Djibril
+Author URI: https://www.djibril.sk
+Description: Hamilton is one of the nicest WordPress portfolio themes available. Much respect to Anders Noren for his design and development skills.
+Version: 1.1.
+Updated: 2020-06-27 11:43:05 CEST
+
+* -------------------------------------------------------------------------------- */
+/*	DESIGN CHANGES
+/* -------------------------------------------------------------------------------- */
+
+body {
+    background: #fff;
+	border: none;
+    font-family: 'Brandon Text', sans-serif;
+    color: #222;
+    font-size: 18px;
+}
+
+.section-inner, .site-header {
+    max-width: 990px;
+}
+
+.entry-content .alignwide {
+    max-width: 990px;
+    width: 990px;
+    margin-left: calc( 50% - 495px );
+}
+
+.section-inner.thin {
+	max-width: 720px;
+}
+
+.alt-nav {
+	font-weight: 500;
+}
+
+.alt-nav ul {
+    border-radius: 0px;
+    background-color: #222;
+}
+
+.alt-nav ul a {
+	font-size: 0.9em;
+}
+
+.alt-nav ul:after {
+    display: none;
+}
+
+.alt-nav a {
+	color: #222;
+    text-decoration: none !important;
+}
+
+.alt-nav li a:hover {
+	text-decoration: none !important;
+}
+
+/* -------------------------------------------------------------------------------- */
+/*	SINGLE POST
+/* -------------------------------------------------------------------------------- */
+
+.meta.bottom, .featured-image, .featured-image img {
+	display: none;
+}
+
+.page-header {
+	margin: 0 auto !important;
+}
+
+.wtr-time-wrap {
+	display: block;
+	font-size: 18px;
+}
+
+figure {
+	text-align: center;
+}
+
+p.has-drop-cap:not(:focus):first-letter {
+    font-size: 3.3em;
+}
+
+.post-preview h2 {
+    font-size: 1em !important;
+}
+
+.related-posts-wrapper {
+	display: none;
+}
+
+li {
+    line-height: 1.5;
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+/* -------------------------------------------------------------------------------- */
+/*	CUSTOM ELEMENTS
+/* -------------------------------------------------------------------------------- */
+
+.brandon-title {
+    font-family: 'Brandon Text', sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0 0 13px;
+    word-spacing: .1em;
+}
+
+.brandon-text-light {
+    font-family: 'Brandon Text', sans-serif;
+    color: #888;
+    font-size: 1em;
+}
+
+.brandon-text-dark {
+    font-family: 'Brandon Text', sans-serif;
+    color: #222;
+    font-size: 1em;
+}
+
+.portfolio-title {
+    margin: 0 0 30px;;
+}
+
+.box-related {
+	background-color: #f5f5f5;
+    font-family: 'Brandon Text', sans-serif;
+    font-size: 1em;
+	padding: 20px 30px;
+    margin: 50px 0px;
+    border-left: solid 3px #0b6e99;
+    color: #37352f;
+}
+
+.box-note {
+	background-color: #d23c5014;
+    padding: 20px 30px;
+    margin: 50px 0px;
+    border-left: solid 3px #d23c50;
+    color: #37352f;
+    font-size: 1em;
+	font-family: 'Brandon Text', sans-serif;
+}
+
+.box-quote {
+	padding: 0 0 0 25px;
+    margin: 40px 0;
+    font-size: 1.25em;
+    border-left: 3px solid #0b6e99;
+    color: #0b6e99;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.box-callout {
+	background: #f5f5f5;
+    font-family: 'Brandon Text', sans-serif;
+    font-size: 1em;
+    padding: 50px;
+    margin: 40px 0;
+}
+
+.say-hello-title {
+	margin: 30px 0px;
+}
+
+.custom-divider {
+    border-top: 1px solid rgba(55, 53, 47, 0.09);
+    margin: 50px auto 0 auto;
+    width: 100%;
+	max-width: 740px;
+}
+
+.ol-callout {
+	margin-left: 30px !important;
+}
+
+.custom-divider {
+    border-top: 1px solid rgba(55, 53, 47, 0.09);
+    margin: 50px auto 0 auto;
+    width: 100%;
+	max-width: 740px;
+}
+
+.comments, .comment-respond {
+	padding-top: 50px !important;
+}
+
+.btn-one {
+	border-radius: 0;
+    background: #0f0f0f;
+	color: #f3f3f7;
+    text-transform: uppercase;
+    font-size: 13px;
+	font-weight: 600;
+	padding: 18px 35px 20px 35px;
+}
+
+.btn-newsletter, #comment-form-comment {
+	font-size: 14px;
+    font-weight: 500;
+	margin-top: 0 !important;
+}
+
+.consent-newsletter {
+	color: #888;
+	font-size: 0.75em;
+	padding: 0 2em;
+	font-family: 'Brandon Text', sans-serif;
+}
+
+#respond #comment-form-comment {
+	box-shadow: 0px 0px 0px #fff inset !important;
+	font-family: 'Brandon Text', sans-serif !important;
+}
+
+#respond .comment-form-fields p.comment-form-posting-as {
+	font-family: 'Brandon Text', sans-serif !important;
+	font-size: 13px !important;
+	color: #222 !important;
+}
+
+.akismet_comment_form_privacy_notice {
+	color: #888 !important;
+	font-size: 0.75em !important;
+	font-family: 'Brandon Text', sans-serif !important;
+}
+
+.wp-block-jetpack-mailchimp input {
+	font-family: 'Brandon Text', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+	background-color: #fff;
+}
+
+.wp-block-jetpack-mailchimp .wp-block-jetpack-mailchimp_notification.wp-block-jetpack-mailchimp_success, .wp-block-jetpack-mailchimp .wp-block-jetpack-mailchimp_notification.wp-block-jetpack-mailchimp_processing {
+	background-color: #f5f5f5 !important;
+    color: #222 !important;
+    text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.wp-block-jetpack-mailchimp .wp-block-jetpack-mailchimp_notification.wp-block-jetpack-mailchimp_error {
+	background-color: #f5f5f5 !important;
+    color: rgb(173, 9, 9) !important;
+    text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.comment-reply-title {
+    font-size: 1.3em !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+/* -------------------------------------------------------------------------------- */
+/*	FOOTER
+/* -------------------------------------------------------------------------------- */
+
+
+.site-footer { 
+	padding: 100px 0;
+	text-align: center;
+}
+
+.site-footer p { 
+    font-family: 'Brandon Text', sans-serif;
+    text-align: center;
+    font-size: 0.83em;
+    line-height: 1;
+	margin: 0;
+	font-weight: 500;
+}
+
+.site-footer p + p {
+	color: #222;
+	font-size: 0.83em;
+    margin-top: 12px;
+	font-weight: 500;
+}
+
+.site-footer a {
+	color: #222;
+	text-decoration: none !important;
+}
+
+.theme-by {
+	display: none !important;	
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	5. Typography
+/* -------------------------------------------------------------------------------- */
+
+.title {
+	font-size: 32px !important;
+	font-weight: 500 !important;
+}
+
+.comment-body {
+	font-size: 0.9em !important;
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+p a, li a {
+	color: #0b6e99;
+    text-decoration: underline !important;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.post-pagination a {
+	font-size: 24px;
+	color: #222;
+}
+
+.title {
+	font-size: 1.7em !important;
+	font-weight: 600 !important;
+}
+
+.meta {
+    color: #888;
+	font-weight: 500;
+	font-size: 0.9em;
+}
+
+h1 { 
+	font-size: 2.2em; 
+	font-weight: 600;
+}
+
+h2 { 
+	font-size: 1.6em; 
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 1.4em; 
+	font-weight: 500;
+
+}
+
+h4 { 
+	font-size: 1.2em; 
+	font-weight: 500;
+}
+
+h5 { 
+	font-size: 1em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: 0.7em;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.025em;
+}
+
+.page-header p {
+    font-family: 'Brandon Text', sans-serif;
+	font-size: 0.9em;
+    color: #888;
+    text-align: center;
+    margin: 25px 0 0;
+	font-weight: 500;
+}
+
+.site-nav footer p:first-child {
+    font-family: 'Brandon Text', sans-serif;
+}
+
+.site-nav li {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+	font-family: 'Brandon Text';
+}
+
+.alt-nav li {
+    font-family: 'Brandon Text', sans-serif;
+    font-size: 18px;
+}
+
+@media (min-width: 1001px) {
+.three-columns-grid .post-preview h2 {
+    font-size: 28px !important;
+}
+}
+
+strong {
+	font-weight: 600;
+}
+
+
+/* ================================================================================ */
+/*	DARK MODE: if user switches the system settings to dark mode this media query will be applied
+/* ================================================================================ */
+
+/* @media (prefers-color-scheme: dark) {
+
+body {
+	background: #010101;
+	color: #F7F3F3;
+}
+
+p a {
+    color: #40aad8;
+}
+
+.alt-nav a {
+	color: #F7F3F3;
+    font-size: 18px;
+    text-decoration: none !important;
+}
+
+code {
+	background: rgba( 255, 255, 255, 0.2 );
+}
+
+address {
+	background: rgba( 255, 255, 255, 0.2 );
+}
+
+.site-footer p + p {
+	color: #F7F3F3;
+}
+
+.site-footer a {
+	color: #F7F3F3;
+}
+
+.box-related {
+	background-color: #49494952;
+    border-left: solid 3px #40aad8;
+    color: #F7F3F3;
+}
+
+.box-note {
+	background-color: #49494952;
+    border-left: solid 3px #840032;
+    color: #F7F3F3;
+}
+
+.box-quote {
+    border-left: 3px solid #40aad8;
+    color: #40aad8;
+}
+
+.box-callout {
+	background-color: #49494952;
+	color: #F7F3F3;
+}
+
+.site-nav ul + ul a, .site-nav ul a {
+	color: #010101;
+	text-decoration: none !important;
+}
+
+.alt-nav ul {
+    background: #0f0f0f;
+}
+
+.alt-nav > li.menu-item-has-children:after {
+	border-top-color: #F7F3F3;
+}
+
+.post-pagination a {
+	color: #F7F3F3;
+}
+
+.site-header .site-title a:hover, .post-pagination a:hover {
+	color: #494949;
+}
+
+:root figcaption, .wp-caption-text {
+    color: #888;
+}
+
+.coblocks-form .coblocks-field, .coblocks-form select {
+	border: 1px solid #F7F3F3;
+	color: #F7F3F3;
+	background: #0f0f0f;
+}
+
+.wp-block-button__link {
+    color: #0f0f0f;
+    background: #f3f3f7;
+}
+
+.wp-block-button__link:hover {
+    color: #0f0f0f;
+    background: #494949;
+}
+
+.custom-divider {
+	border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.btn-one {
+	border-radius: 0;
+    background: #f3f3f7;
+	color: #0f0f0f;
+    text-transform: uppercase;
+    font-size: 13px;
+	font-weight: 600;
+	padding: 18px 35px 20px 35px;
+}
+
+.nav-toggle .bar {
+	background-color: #F7F3F3;
+}
+
+.site-nav {
+    background: #010101;
+}
+
+.site-nav ul + ul a, .site-nav ul a {
+    color: #F7F3F3;
+}
+
+.site-nav footer {
+    background: #010101;
+}
+
+}
+
+*/
+
+/* -------------------------------------------------------------------------------- */
+/*	14.	Media Queries
+/* -------------------------------------------------------------------------------- */
+
+
+/* 1380 PX */
+
+@media ( max-width: 1380px ) {
+
+
+	/* Entry Content ----------------------------- */
+	
+	/* PAGE MEDIA */
+
+	.gallery {
+		left: calc( 50% - 45vw - 10px );
+		width: calc( 90vw + 20px );
+	}
+
+}
+
+
+/* 1180 PX */
+
+@media ( max-width: 1377px ) {
+
+
+	/* Entry Content ----------------------------- */
+
+	.entry-content .alignwide {
+		margin-left: calc( 50% - 45vw );
+		max-width: 90vw;
+		width: 90vw;
+	}
+
+}
+
+
+/* 1000 PX */
+
+@media ( max-width: 1000px ) {
+
+
+	/* Singular ----------------------------- */
+
+	.post-preview h2 {
+		font-size: 1.5em;
+	}
+
+}
+
+
+/* 750 PX */
+
+
+@media ( max-width: 750px ) {
+
+
+	/* Navigation ----------------------------- */
+	
+	.site-nav .menus > ul {
+		float: none;
+		width: 100%;
+	}
+	
+	.site-nav .menus > ul + ul {
+		margin: 40px 0 0;
+	}
+
+
+	/* Entry Content ----------------------------- */
+	
+	/* PAGE MEDIA */
+	
+	.alignleft {
+		margin: 5px 25px 25px 0;
+	}
+	
+	.alignright {
+		margin: 5px 0 25px 25px;
+	}
+	
+	.alignnone {
+		max-width: 100%;
+	}
+	
+	.alignnone,
+	.aligncenter {
+		margin: 40px auto;
+	}
+	
+	.gallery {
+		margin: 40px auto 20px;
+	}
+	
+	.gallery + .gallery {
+		margin-top: -20px;
+	}
+	
+	.gallery-columns-1 .gallery-caption,
+	.gallery-columns-2 .gallery-caption,
+	.gallery-columns-3 .gallery-caption {
+		bottom: 10px;
+		font-size: 12px;
+		left: 20px;
+		max-width: calc( 100% - 40px );
+	}
+	
+	/* PULL QUOTES */
+	
+	.entry-content .pull.left {
+		margin-left: 0;
+	}
+	
+	.entry-content .pull.right {
+		margin-right: 0;
+	}
+
+
+	/* Comments ----------------------------- */
+	
+	.comment-author,
+	.comment-metadata {
+		padding-left: 70px;
+	}
+	
+	.comment-author .avatar {
+		left: 0;
+		width: 55px;
+	}
+
+
+}
+
+
+/* 620 PX */
+
+@media ( max-width: 620px ) {
+
+    body { 
+		font-size: 1em; 
+	}
+	
+	.title {
+        font-size: 1.6em !important;
+        font-weight: 600 !important;
+	}
+
+    h2 { 
+        font-size: 1.5em; 
+        font-weight: 600;
+    }
+    
+    h3 {
+        font-size: 1.4em; 
+        font-weight: 500;
+    
+    }
+    
+    h4 { 
+        font-size: 1.2em; 
+        font-weight: 500;
+    }
+    
+    h5 { 
+        font-size: 1em;
+		font-weight: 600;
+    	text-transform: uppercase;
+    }
+    
+    h6 {
+        font-size: .8em;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+    }
+
+    .brandon-text-dark, .brandon-text-light {
+        font-size: 1em;
+    }
+	
+	/* Singular ----------------------------- */
+	
+	.page-header p {
+		font-size: 0.9em;
+	}
+
+    p {
+        font-size: 1em;
+    }
+	
+    .box-quote {
+        font-size: 1.1em;
+    }
+
+    .box-related {
+        font-size: .9em;
+    }xs
+	
+	/* Entry Content ----------------------------- */
+	
+	.entry-content p {
+		margin-bottom: 25px;
+	}
+	
+	/* PAGE MEDIA */
+	
+	.gallery {
+		left: calc( 50% - 50vw );
+		margin: 40px auto 30px;
+		padding: 0 5px;
+		width: 100vw;
+	}
+	
+	.gallery + .gallery {
+		margin-top: -30px;
+	}
+	
+	.gallery .gallery-item {
+		margin-bottom: 10px;
+		padding: 0 5px;
+	}
+	
+	.gallery-caption {
+		display: none;
+	}
+	
+	.gallery-columns-2 .gallery-item,
+	.gallery-columns-3 .gallery-item,
+	.gallery-columns-4 .gallery-item,
+	.gallery-columns-5 .gallery-item,
+	.gallery-columns-6 .gallery-item,
+	.gallery-columns-7 .gallery-item,
+	.gallery-columns-8 .gallery-item,
+	.gallery-columns-9 .gallery-item {
+		width: 50%;
+	}
+
+}
+
+
+/* 400 PX */
+
+@media ( max-width: 400px ) {
+	
+	
+	/* Site Header ----------------------------- */
+	
+	.site-header .site-title {
+		font-size: 20px;
+	}
+
+    .title {
+        font-size: 1.5em !important;
+        font-weight: 500 !important;
+	}
+	
+	/* Singular ----------------------------- */
+	
+	.page-header p {
+		margin-top: .9em;
+	}
+
+	/* Archive ----------------------------- */
+	
+	.post-preview header {
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
+		top: 10px;
+	}
+	
+	.post-preview h2 {
+		font-size: 0.9em;
+		font-weight: 400;
+	}
+	
+}
